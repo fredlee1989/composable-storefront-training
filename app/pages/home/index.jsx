@@ -45,6 +45,10 @@ import {
 import {useServerContext} from '@salesforce/pwa-kit-react-sdk/ssr/universal/hooks'
 import {useProductSearch} from '@salesforce/commerce-sdk-react'
 
+const MyHeader = () => {
+    return <h1>Hello from custom component</h1>
+}
+
 /**
  * This is the home page for Retail React App.
  * The page is created for demonstration purposes.
@@ -80,6 +84,8 @@ const Home = () => {
                 description="Commerce Cloud Retail React App"
                 keywords="Commerce Cloud, Retail React App, React Storefront"
             />
+
+            <MyHeader></MyHeader>
 
             <Hero
                 title={intl.formatMessage({

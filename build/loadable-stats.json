@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "hash": "342d7419136b7f29011a",
+  "hash": "1911d718b647e5bb4937",
   "publicPath": "/mobify/bundle/development/",
   "outputPath": "/Volumes/MyData/Working/SFCC/ComposableStorefront/pwa-kit-starter-project/build",
   "assetsByChunkName": {
@@ -348,7 +348,7 @@
     {
       "type": "asset",
       "name": "pages-home.js",
-      "size": 39662,
+      "size": 39982,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
