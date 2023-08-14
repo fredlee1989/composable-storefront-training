@@ -1,16 +1,14 @@
 {
   "name": "client",
-  "hash": "0c489b0e66fe57750e40",
+  "hash": "c54671cc89db1b189f0b",
   "publicPath": "/mobify/bundle/development/",
   "outputPath": "/Volumes/MyData/Working/SFCC/ComposableStorefront/pwa-kit-starter-project/build",
   "assetsByChunkName": {
     "main": [
-      "main.js",
-      "main.6817b3f5c3c8a0a23590.hot-update.js"
+      "main.js"
     ],
     "pages-home": [
-      "pages-home.js",
-      "pages-home.6817b3f5c3c8a0a23590.hot-update.js"
+      "pages-home.js"
     ],
     "pages-login": [
       "pages-login.js"
@@ -83,7 +81,7 @@
     {
       "type": "asset",
       "name": "main.js",
-      "size": 1161463,
+      "size": 1161501,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -422,33 +420,6 @@
     },
     {
       "type": "asset",
-      "name": "pages-home.6817b3f5c3c8a0a23590.hot-update.js",
-      "size": 19787,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true,
-        "fullhash": "6817b3f5c3c8a0a23590",
-        "related": {
-          "sourceMap": "pages-home.6817b3f5c3c8a0a23590.hot-update.js.map"
-        }
-      },
-      "chunkNames": [
-        "pages-home"
-      ],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "pages-home"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
       "name": "pages-login.js",
       "size": 12465,
       "emitted": false,
@@ -574,33 +545,6 @@
     },
     {
       "type": "asset",
-      "name": "main.6817b3f5c3c8a0a23590.hot-update.js",
-      "size": 364,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true,
-        "fullhash": "6817b3f5c3c8a0a23590",
-        "related": {
-          "sourceMap": "main.6817b3f5c3c8a0a23590.hot-update.js.map"
-        }
-      },
-      "chunkNames": [
-        "main"
-      ],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "main"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
       "name": "_1242.js",
       "size": 284,
       "emitted": false,
@@ -621,25 +565,6 @@
         "_1242"
       ],
       "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "main.6817b3f5c3c8a0a23590.hot-update.json",
-      "size": 41,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true,
-        "fullhash": "6817b3f5c3c8a0a23590"
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "chunks": [],
-      "auxiliaryChunks": []
     }
   ],
   "namedChunkGroups": {
@@ -655,14 +580,11 @@
         },
         {
           "name": "main.js"
-        },
-        {
-          "name": "main.6817b3f5c3c8a0a23590.hot-update.js"
         }
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 3,
+      "filteredAuxiliaryAssets": 2,
       "auxiliaryAssetsSize": null,
       "children": {},
       "childAssets": {}
@@ -675,14 +597,11 @@
       "assets": [
         {
           "name": "pages-home.js"
-        },
-        {
-          "name": "pages-home.6817b3f5c3c8a0a23590.hot-update.js"
         }
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 2,
+      "filteredAuxiliaryAssets": 1,
       "auxiliaryAssetsSize": null,
       "children": {},
       "childAssets": {}
@@ -973,8 +892,7 @@
     {
       "id": "main",
       "files": [
-        "main.js",
-        "main.6817b3f5c3c8a0a23590.hot-update.js"
+        "main.js"
       ]
     },
     {
@@ -986,8 +904,7 @@
     {
       "id": "pages-home",
       "files": [
-        "pages-home.js",
-        "pages-home.6817b3f5c3c8a0a23590.hot-update.js"
+        "pages-home.js"
       ]
     },
     {
