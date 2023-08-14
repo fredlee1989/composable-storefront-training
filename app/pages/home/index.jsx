@@ -11,6 +11,8 @@ import {useLocation} from 'react-router-dom'
 
 // Components
 import {
+    Alert,
+    AlertIcon,
     Box,
     Button,
     SimpleGrid,
@@ -45,8 +47,16 @@ import {
 import {useServerContext} from '@salesforce/pwa-kit-react-sdk/ssr/universal/hooks'
 import {useProductSearch} from '@salesforce/commerce-sdk-react'
 
-const MyHeader = ({name}) => {
-    return <h1>Hello, {name}</h1>
+const MyHeader = ({name="Guys"}) => {
+    return (
+        <Box>
+            <Text fontSize="50px" color="orange">Hello, {name}!</Text>
+            <Alert padding="10" status="info">
+                <AlertIcon/>
+                Chakra UI components unlocked.
+            </Alert>
+        </Box>
+    )
 }
 
 /**
@@ -85,7 +95,7 @@ const Home = () => {
                 keywords="Commerce Cloud, Retail React App, React Storefront"
             />
 
-            <MyHeader name="Fred"></MyHeader>
+            <MyHeader name="Fred" />
 
             <Hero
                 title={intl.formatMessage({

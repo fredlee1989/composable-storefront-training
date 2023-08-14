@@ -1,16 +1,16 @@
 {
   "name": "client",
-  "hash": "a0f31dc3d23ed23229b2",
+  "hash": "0c489b0e66fe57750e40",
   "publicPath": "/mobify/bundle/development/",
   "outputPath": "/Volumes/MyData/Working/SFCC/ComposableStorefront/pwa-kit-starter-project/build",
   "assetsByChunkName": {
     "main": [
       "main.js",
-      "main.1911d718b647e5bb4937.hot-update.js"
+      "main.6817b3f5c3c8a0a23590.hot-update.js"
     ],
     "pages-home": [
       "pages-home.js",
-      "pages-home.1911d718b647e5bb4937.hot-update.js"
+      "pages-home.6817b3f5c3c8a0a23590.hot-update.js"
     ],
     "pages-login": [
       "pages-login.js"
@@ -350,7 +350,7 @@
     {
       "type": "asset",
       "name": "pages-home.js",
-      "size": 39996,
+      "size": 40718,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -422,17 +422,17 @@
     },
     {
       "type": "asset",
-      "name": "pages-home.1911d718b647e5bb4937.hot-update.js",
-      "size": 19065,
+      "name": "pages-home.6817b3f5c3c8a0a23590.hot-update.js",
+      "size": 19787,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "hotModuleReplacement": true,
         "immutable": true,
-        "fullhash": "1911d718b647e5bb4937",
+        "fullhash": "6817b3f5c3c8a0a23590",
         "related": {
-          "sourceMap": "pages-home.1911d718b647e5bb4937.hot-update.js.map"
+          "sourceMap": "pages-home.6817b3f5c3c8a0a23590.hot-update.js.map"
         }
       },
       "chunkNames": [
@@ -574,7 +574,7 @@
     },
     {
       "type": "asset",
-      "name": "main.1911d718b647e5bb4937.hot-update.js",
+      "name": "main.6817b3f5c3c8a0a23590.hot-update.js",
       "size": 364,
       "emitted": false,
       "comparedForEmit": false,
@@ -582,9 +582,9 @@
       "info": {
         "hotModuleReplacement": true,
         "immutable": true,
-        "fullhash": "1911d718b647e5bb4937",
+        "fullhash": "6817b3f5c3c8a0a23590",
         "related": {
-          "sourceMap": "main.1911d718b647e5bb4937.hot-update.js.map"
+          "sourceMap": "main.6817b3f5c3c8a0a23590.hot-update.js.map"
         }
       },
       "chunkNames": [
@@ -624,7 +624,7 @@
     },
     {
       "type": "asset",
-      "name": "main.1911d718b647e5bb4937.hot-update.json",
+      "name": "main.6817b3f5c3c8a0a23590.hot-update.json",
       "size": 41,
       "emitted": false,
       "comparedForEmit": false,
@@ -632,7 +632,7 @@
       "info": {
         "hotModuleReplacement": true,
         "immutable": true,
-        "fullhash": "1911d718b647e5bb4937"
+        "fullhash": "6817b3f5c3c8a0a23590"
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -657,7 +657,7 @@
           "name": "main.js"
         },
         {
-          "name": "main.1911d718b647e5bb4937.hot-update.js"
+          "name": "main.6817b3f5c3c8a0a23590.hot-update.js"
         }
       ],
       "filteredAssets": 0,
@@ -677,7 +677,7 @@
           "name": "pages-home.js"
         },
         {
-          "name": "pages-home.1911d718b647e5bb4937.hot-update.js"
+          "name": "pages-home.6817b3f5c3c8a0a23590.hot-update.js"
         }
       ],
       "filteredAssets": 0,
@@ -974,7 +974,7 @@
       "id": "main",
       "files": [
         "main.js",
-        "main.1911d718b647e5bb4937.hot-update.js"
+        "main.6817b3f5c3c8a0a23590.hot-update.js"
       ]
     },
     {
@@ -987,7 +987,7 @@
       "id": "pages-home",
       "files": [
         "pages-home.js",
-        "pages-home.1911d718b647e5bb4937.hot-update.js"
+        "pages-home.6817b3f5c3c8a0a23590.hot-update.js"
       ]
     },
     {
