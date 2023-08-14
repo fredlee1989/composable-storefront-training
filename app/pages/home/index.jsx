@@ -45,8 +45,8 @@ import {
 import {useServerContext} from '@salesforce/pwa-kit-react-sdk/ssr/universal/hooks'
 import {useProductSearch} from '@salesforce/commerce-sdk-react'
 
-const MyHeader = () => {
-    return <h1>Hello from custom component</h1>
+const MyHeader = ({name}) => {
+    return <h1>Hello, {name}</h1>
 }
 
 /**
@@ -85,7 +85,7 @@ const Home = () => {
                 keywords="Commerce Cloud, Retail React App, React Storefront"
             />
 
-            <MyHeader></MyHeader>
+            <MyHeader name="Fred"></MyHeader>
 
             <Hero
                 title={intl.formatMessage({
