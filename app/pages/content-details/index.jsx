@@ -1,6 +1,8 @@
 import React from "react"
 import fetch from "cross-fetch"
 import {
+    Alert,
+    AlertIcon,
     Box,
     Flex,
     Text
@@ -8,30 +10,37 @@ import {
 
 import {useQuery} from "@tanstack/react-query"
 import {useParams} from "react-router-dom"
-import {HTTPError} from "@salesforce/pwa-kit-react-sdk/ssr/universal/errors"
+// import {HTTPError} from "@salesforce/pwa-kit-react-sdk/ssr/universal/errors"
 
 const SITE_ID = 'RefArch'
 const CLIENT_ID = '2470973a-b8b6-4e91-b9c7-338f2d20c1db'
 
 const ContentDetails = () => {
     const params = useParams()
-    const {data, error, isLoading} = useQuery({
-        queryKey: [params.id],
-        queryFn: () => {
+    const {data, error, isLoading} = useQuery([params.id], () => {
             return fetch(`http://localhost:3000/mobify/proxy/ocapi/s/${SITE_ID}/dw/shop/v20_2/content/${params.id}?client_id=${CLIENT_ID}`).then(res => res.json()).then((json) => {
                 console.log(json)
                 return json
             })
-        },
-        cacheTime: 0
-    })
+        }
+    )
 
     if(isLoading) {
         return <Text textAlign="center">Loading...</Text>
     } else if (error) {
-        return <Text textAlign="center">Error query hit: {error}</Text>
+        return (
+            <Alert padding="10" status="error">
+                <AlertIcon/>
+                Error query hit: {error}
+            </Alert>
+        )
     } else if (data.fault) {
-        throw new HTTPError(404, data.fault.message)
+        return (
+            <Alert padding="10" status="error">
+                <AlertIcon/>
+                {data.fault.message}
+            </Alert>
+        )
     } else {
         return (
             <Box
