@@ -1,12 +1,11 @@
 {
   "name": "client",
-  "hash": "1b3ae24710e57d4b1526",
+  "hash": "8c60bfcec0c1143bc020",
   "publicPath": "/mobify/bundle/development/",
   "outputPath": "/Volumes/MyData/Working/SFCC/ComposableStorefront/pwa-kit-starter-project/build",
   "assetsByChunkName": {
     "main": [
-      "main.js",
-      "main.07954f4d6b241b2723a5.hot-update.js"
+      "main.js"
     ],
     "pages-home": [
       "pages-home.js"
@@ -402,33 +401,6 @@
     },
     {
       "type": "asset",
-      "name": "main.07954f4d6b241b2723a5.hot-update.js",
-      "size": 37428,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true,
-        "fullhash": "07954f4d6b241b2723a5",
-        "related": {
-          "sourceMap": "main.07954f4d6b241b2723a5.hot-update.js.map"
-        }
-      },
-      "chunkNames": [
-        "main"
-      ],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "main"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
       "name": "pages-product-detail.js",
       "size": 36777,
       "emitted": false,
@@ -555,7 +527,7 @@
     {
       "type": "asset",
       "name": "pages-content-details.js",
-      "size": 6439,
+      "size": 6734,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -580,7 +552,7 @@
     {
       "type": "asset",
       "name": "pages-content-search.js",
-      "size": 5965,
+      "size": 6260,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -649,25 +621,6 @@
         "_1242"
       ],
       "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "main.07954f4d6b241b2723a5.hot-update.json",
-      "size": 28,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true,
-        "fullhash": "07954f4d6b241b2723a5"
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "chunks": [],
-      "auxiliaryChunks": []
     }
   ],
   "namedChunkGroups": {
@@ -683,14 +636,11 @@
         },
         {
           "name": "main.js"
-        },
-        {
-          "name": "main.07954f4d6b241b2723a5.hot-update.js"
         }
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 3,
+      "filteredAuxiliaryAssets": 2,
       "auxiliaryAssetsSize": null,
       "children": {},
       "childAssets": {}
@@ -1032,8 +982,7 @@
     {
       "id": "main",
       "files": [
-        "main.js",
-        "main.07954f4d6b241b2723a5.hot-update.js"
+        "main.js"
       ]
     },
     {

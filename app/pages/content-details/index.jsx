@@ -7,6 +7,7 @@ import {
     Flex,
     Text
 } from '@salesforce/retail-react-app/app/components/shared/ui'
+import {getAppOrigin} from '@salesforce/pwa-kit-react-sdk/utils/url'
 
 import {useQuery} from "@tanstack/react-query"
 import {useParams} from "react-router-dom"
@@ -18,7 +19,7 @@ const CLIENT_ID = '2470973a-b8b6-4e91-b9c7-338f2d20c1db'
 const ContentDetails = () => {
     const params = useParams()
     const {data, error, isLoading} = useQuery([params.id], () => {
-            return fetch(`http://localhost:3000/mobify/proxy/ocapi/s/${SITE_ID}/dw/shop/v20_2/content/${params.id}?client_id=${CLIENT_ID}`).then(res => res.json()).then((json) => {
+            return fetch(`${getAppOrigin()}/mobify/proxy/ocapi/s/${SITE_ID}/dw/shop/v20_2/content/${params.id}?client_id=${CLIENT_ID}`).then(res => res.json()).then((json) => {
                 console.log(json)
                 return json
             })

@@ -8,6 +8,7 @@ import {
     Text
 } from '@salesforce/retail-react-app/app/components/shared/ui'
 import Link from '@salesforce/retail-react-app/app/components/link'
+import {getAppOrigin} from '@salesforce/pwa-kit-react-sdk/utils/url'
 
 const SITE_ID = 'RefArch'
 const CLIENT_ID = '2470973a-b8b6-4e91-b9c7-338f2d20c1db'
@@ -56,7 +57,7 @@ const ContentSearch = ({contentResult}) => {
 
 ContentSearch.getProps = async () => {
     let contentResult
-    const res = await fetch(`http://localhost:3000/mobify/proxy/ocapi/s/${SITE_ID}/dw/shop/v20_2/content_search?q=about&client_id=${CLIENT_ID}`)
+    const res = await fetch(`${getAppOrigin()}/mobify/proxy/ocapi/s/${SITE_ID}/dw/shop/v20_2/content_search?q=about&client_id=${CLIENT_ID}`)
 
     if(res.ok) {
         contentResult = await res.json()
