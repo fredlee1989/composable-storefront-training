@@ -20,7 +20,8 @@ import {
     VStack,
     Fade,
     useTheme,
-    Tooltip
+    Tooltip,
+    Spinner
 } from '@salesforce/retail-react-app/app/components/shared/ui'
 import {useDerivedProduct} from '@salesforce/retail-react-app/app/hooks'
 import {useAddToCartModalContext} from '@salesforce/retail-react-app/app/hooks/use-add-to-cart-modal'
@@ -38,6 +39,8 @@ import {HideOnDesktop, HideOnMobile} from '@salesforce/retail-react-app/app/comp
 import QuantityPicker from '@salesforce/retail-react-app/app/components/quantity-picker'
 import {useToast} from '@salesforce/retail-react-app/app/hooks/use-toast'
 import {API_ERROR_MESSAGE} from '@salesforce/retail-react-app/app/constants'
+
+import {usePromotions} from '@salesforce/commerce-sdk-react'
 
 const ProductViewHeader = ({name, price, currency, category, productType}) => {
     const intl = useIntl()
@@ -95,7 +98,6 @@ const ProductView = forwardRef(
         {
             product,
             category,
-            promotions,
             showFullLink = false,
             imageSize = 'md',
             isWishlistLoading = false,
@@ -112,6 +114,20 @@ const ProductView = forwardRef(
         },
         ref
     ) => {
+        const [activePromotionId, setActivePromotionId] = useState('') // this is the hovered over promotion, set onOpen, removed onClose
+        const {productPromotions} = product || {} // this destructures productPromotions from the product API call, used in the iterator loop to show promo calloutMsg
+        const {data: promotions} = usePromotions(
+            {
+                parameters: {
+                    ids: activePromotionId
+                }
+            },
+            {
+                enabled: !isProductLoading
+            }
+        )
+        const promos = promotions?.data || [] //this takes the response from the hook above, and sets it in "promos" - this is what we'll use to build the tooltip.
+
         const showToast = useToast()
         const intl = useIntl()
         const history = useHistory()
@@ -494,11 +510,23 @@ const ProductView = forwardRef(
                         </VStack>
 
                         {/* Show Promotions: promotions.data is the array to loop over */}
-                        {promotions.length && (
+                        {productPromotions && (
                             <Box>
                                 <Text>Available Promotions:</Text>
-                                {promotions?.map(({id, calloutMsg, details}) => (
-                                    <Tooltip key={id} label={details} aria-label="Promotion details">
+                                {productPromotions.map(({promotionId, calloutMsg}) => (
+                                    <Tooltip
+                                        onOpen={() => {
+                                            setActivePromotionId(promotionId)
+                                        }}
+                                        onClose={() => {
+                                            setActivePromotionId('')
+                                        }}
+                                        key={promotionId}
+                                        label={
+                                            (promos?.[0]?.details) || (<Spinner/>)
+                                        }
+                                        aria-label="Promotion details"
+                                    >
                                         <Text>{calloutMsg}</Text>
                                     </Tooltip>
                                 ))}

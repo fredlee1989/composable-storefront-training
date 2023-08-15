@@ -1,12 +1,12 @@
 {
   "name": "client",
-  "hash": "a21fba82ae6ef566d91d",
+  "hash": "6b52d25d51fda1a3714f",
   "publicPath": "/mobify/bundle/development/",
   "outputPath": "/Volumes/MyData/Working/SFCC/ComposableStorefront/pwa-kit-starter-project/build",
   "assetsByChunkName": {
     "main": [
       "main.js",
-      "main.49caa7998e279b8c9614.hot-update.js"
+      "main.0b8bc14008a627be48df.hot-update.js"
     ],
     "pages-home": [
       "pages-home.js"
@@ -187,6 +187,29 @@
     },
     {
       "type": "asset",
+      "name": "app_components_product-view_index_jsx.js",
+      "size": 71549,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "app_components_product-view_index_jsx.js.map"
+        }
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "app_components_product-view_index_jsx"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
       "name": "pages-cart.js",
       "size": 70862,
       "emitted": false,
@@ -207,29 +230,6 @@
       "filteredRelated": 1,
       "chunks": [
         "pages-cart"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "app_components_product-view_index_jsx.js",
-      "size": 69798,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "javascriptModule": false,
-        "related": {
-          "sourceMap": "app_components_product-view_index_jsx.js.map"
-        }
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "app_components_product-view_index_jsx"
       ],
       "auxiliaryChunks": []
     },
@@ -403,7 +403,7 @@
     {
       "type": "asset",
       "name": "pages-product-detail.js",
-      "size": 37564,
+      "size": 36920,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -427,17 +427,17 @@
     },
     {
       "type": "asset",
-      "name": "app_components_product-view_index_jsx.49caa7998e279b8c9614.hot-update.js",
-      "size": 32508,
+      "name": "app_components_product-view_index_jsx.0b8bc14008a627be48df.hot-update.js",
+      "size": 34259,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "hotModuleReplacement": true,
         "immutable": true,
-        "fullhash": "49caa7998e279b8c9614",
+        "fullhash": "0b8bc14008a627be48df",
         "related": {
-          "sourceMap": "app_components_product-view_index_jsx.49caa7998e279b8c9614.hot-update.js.map"
+          "sourceMap": "app_components_product-view_index_jsx.0b8bc14008a627be48df.hot-update.js.map"
         }
       },
       "chunkNames": [],
@@ -627,7 +627,7 @@
     },
     {
       "type": "asset",
-      "name": "main.49caa7998e279b8c9614.hot-update.js",
+      "name": "main.0b8bc14008a627be48df.hot-update.js",
       "size": 366,
       "emitted": false,
       "comparedForEmit": false,
@@ -635,9 +635,9 @@
       "info": {
         "hotModuleReplacement": true,
         "immutable": true,
-        "fullhash": "49caa7998e279b8c9614",
+        "fullhash": "0b8bc14008a627be48df",
         "related": {
-          "sourceMap": "main.49caa7998e279b8c9614.hot-update.js.map"
+          "sourceMap": "main.0b8bc14008a627be48df.hot-update.js.map"
         }
       },
       "chunkNames": [
@@ -677,7 +677,7 @@
     },
     {
       "type": "asset",
-      "name": "main.49caa7998e279b8c9614.hot-update.json",
+      "name": "main.0b8bc14008a627be48df.hot-update.json",
       "size": 68,
       "emitted": false,
       "comparedForEmit": false,
@@ -685,7 +685,7 @@
       "info": {
         "hotModuleReplacement": true,
         "immutable": true,
-        "fullhash": "49caa7998e279b8c9614"
+        "fullhash": "0b8bc14008a627be48df"
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -710,7 +710,7 @@
           "name": "main.js"
         },
         {
-          "name": "main.49caa7998e279b8c9614.hot-update.js"
+          "name": "main.0b8bc14008a627be48df.hot-update.js"
         }
       ],
       "filteredAssets": 0,
@@ -841,7 +841,7 @@
           "name": "app_components_product-view_index_jsx.js"
         },
         {
-          "name": "app_components_product-view_index_jsx.49caa7998e279b8c9614.hot-update.js"
+          "name": "app_components_product-view_index_jsx.0b8bc14008a627be48df.hot-update.js"
         },
         {
           "name": "app_components_order-summary_index_jsx.js"
@@ -883,7 +883,7 @@
           "name": "app_components_product-view_index_jsx.js"
         },
         {
-          "name": "app_components_product-view_index_jsx.49caa7998e279b8c9614.hot-update.js"
+          "name": "app_components_product-view_index_jsx.0b8bc14008a627be48df.hot-update.js"
         },
         {
           "name": "app_components_order-summary_index_jsx.js"
@@ -984,7 +984,7 @@
           "name": "app_components_product-view_index_jsx.js"
         },
         {
-          "name": "app_components_product-view_index_jsx.49caa7998e279b8c9614.hot-update.js"
+          "name": "app_components_product-view_index_jsx.0b8bc14008a627be48df.hot-update.js"
         },
         {
           "name": "pages-product-detail.js"
@@ -1030,7 +1030,7 @@
           "name": "app_components_product-view_index_jsx.js"
         },
         {
-          "name": "app_components_product-view_index_jsx.49caa7998e279b8c9614.hot-update.js"
+          "name": "app_components_product-view_index_jsx.0b8bc14008a627be48df.hot-update.js"
         },
         {
           "name": "app_components_confirmation-modal_index_jsx-app_components_product-item_index_jsx-app_compone-5d0c1c.js"
@@ -1070,7 +1070,7 @@
       "id": "main",
       "files": [
         "main.js",
-        "main.49caa7998e279b8c9614.hot-update.js"
+        "main.0b8bc14008a627be48df.hot-update.js"
       ]
     },
     {
@@ -1185,7 +1185,7 @@
       "id": "app_components_product-view_index_jsx",
       "files": [
         "app_components_product-view_index_jsx.js",
-        "app_components_product-view_index_jsx.49caa7998e279b8c9614.hot-update.js"
+        "app_components_product-view_index_jsx.0b8bc14008a627be48df.hot-update.js"
       ]
     },
     {
