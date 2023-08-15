@@ -19,7 +19,8 @@ import {
     Text,
     VStack,
     Fade,
-    useTheme
+    useTheme,
+    Tooltip
 } from '@salesforce/retail-react-app/app/components/shared/ui'
 import {useDerivedProduct} from '@salesforce/retail-react-app/app/hooks'
 import {useAddToCartModalContext} from '@salesforce/retail-react-app/app/hooks/use-add-to-cart-modal'
@@ -94,6 +95,7 @@ const ProductView = forwardRef(
         {
             product,
             category,
+            promotions,
             showFullLink = false,
             imageSize = 'md',
             isWishlistLoading = false,
@@ -490,6 +492,18 @@ const ProductView = forwardRef(
                             </HideOnDesktop>
                             {isProductASet && <p>{product?.shortDescription}</p>}
                         </VStack>
+
+                        {/* Show Promotions: promotions.data is the array to loop over */}
+                        {promotions.length && (
+                            <Box>
+                                <Text>Available Promotions:</Text>
+                                {promotions?.map(({id, calloutMsg, details}) => (
+                                    <Tooltip key={id} label={details} aria-label="Promotion details">
+                                        <Text>{calloutMsg}</Text>
+                                    </Tooltip>
+                                ))}
+                            </Box>
+                        )}
 
                         <Box>
                             {!showLoading && showInventoryMessage && (

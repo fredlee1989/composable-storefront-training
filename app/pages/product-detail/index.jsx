@@ -17,8 +17,10 @@ import {
     useCategory,
     useShopperBasketsMutation,
     useShopperCustomersMutation,
-    useCustomerId
+    useCustomerId,
+    usePromotions
 } from '@salesforce/commerce-sdk-react'
+import {pluckIds} from '../../utils/utils'
 
 // Hooks
 import {useCurrentBasket} from '@salesforce/retail-react-app/app/hooks/use-current-basket'
@@ -79,6 +81,21 @@ const ProductDetail = () => {
             keepPreviousData: true
         }
     )
+
+    // Get promotionIds as a string of comma-separated values
+    const promotionIds = pluckIds(product?.productPromotions, 'promotionId')
+    const {data: promotions} = usePromotions(
+        {
+            parameters: {
+                ids: promotionIds
+            }
+        },
+        {
+            enabled: !isProductLoading
+        }
+    )
+    const promos = promotions?.data || []
+
     const isProductASet = product?.type.set
     // Note: Since category needs id from product detail, it can't be server side rendered atm
     // until we can do dependent query on server
@@ -329,6 +346,7 @@ const ProductDetail = () => {
                         <ProductView
                             product={product}
                             category={primaryCategory?.parentCategoryTree || []}
+                            promotions={promos || []}
                             addToCart={(variant, quantity) =>
                                 handleAddToCart([{product, variant, quantity}])
                             }
