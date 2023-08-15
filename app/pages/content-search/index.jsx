@@ -9,8 +9,8 @@ import {
 } from '@salesforce/retail-react-app/app/components/shared/ui'
 import Link from '@salesforce/retail-react-app/app/components/link'
 
-const siteID = 'RefArch'
-const clientID = '2470973a-b8b6-4e91-b9c7-338f2d20c1db'
+const SITE_ID = 'RefArch'
+const CLIENT_ID = '2470973a-b8b6-4e91-b9c7-338f2d20c1db'
 
 const ContentSearch = ({contentResult}) => {
     if (!contentResult) {
@@ -56,7 +56,7 @@ const ContentSearch = ({contentResult}) => {
 
 ContentSearch.getProps = async () => {
     let contentResult
-    const res = await fetch(`http://localhost:3000/mobify/proxy/ocapi/s/${siteID}/dw/shop/v20_2/content_search?q=about&client_id=${clientID}`)
+    const res = await fetch(`http://localhost:3000/mobify/proxy/ocapi/s/${SITE_ID}/dw/shop/v20_2/content_search?q=about&client_id=${CLIENT_ID}`)
 
     if(res.ok) {
         contentResult = await res.json()

@@ -27,6 +27,7 @@ const Home = loadable(() => import('./pages/home'), {fallback})
 const Login = loadable(() => import('./pages/login'), {fallback})
 
 const ContentSearch = loadable(() => import('./pages/content-search'), {fallback})
+const ContentDetails = loadable(() => import('./pages/content-details'), {fallback})
 
 const Registration = loadable(() => import('./pages/registration'), {
     fallback
@@ -111,6 +112,10 @@ export const routes = [
     {
         path: '/content-search',
         component: ContentSearch
+    },
+    {
+        path: '/content/:id',
+        component: ContentDetails
     },
     {
         path: '*',

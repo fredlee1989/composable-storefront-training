@@ -1,12 +1,12 @@
 {
   "name": "client",
-  "hash": "d615296ffc5a5b30f00c",
+  "hash": "a1fa7cd2c701a5187845",
   "publicPath": "/mobify/bundle/development/",
   "outputPath": "/Volumes/MyData/Working/SFCC/ComposableStorefront/pwa-kit-starter-project/build",
   "assetsByChunkName": {
     "main": [
       "main.js",
-      "main.641133788059d4735b2b.hot-update.js"
+      "main.2047afccc60c119d7caf.hot-update.js"
     ],
     "pages-home": [
       "pages-home.js"
@@ -15,8 +15,11 @@
       "pages-login.js"
     ],
     "pages-content-search": [
-      "pages-content-search.js",
-      "pages-content-search.641133788059d4735b2b.hot-update.js"
+      "pages-content-search.js"
+    ],
+    "pages-content-details": [
+      "pages-content-details.js",
+      "pages-content-details.2047afccc60c119d7caf.hot-update.js"
     ],
     "pages-registration": [
       "pages-registration.js"
@@ -86,7 +89,7 @@
     {
       "type": "asset",
       "name": "main.js",
-      "size": 1163326,
+      "size": 1164595,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -525,8 +528,60 @@
     },
     {
       "type": "asset",
+      "name": "pages-content-details.js",
+      "size": 6198,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "pages-content-details.js.map"
+        }
+      },
+      "chunkNames": [
+        "pages-content-details"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "pages-content-details"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "pages-content-details.2047afccc60c119d7caf.hot-update.js",
+      "size": 6187,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true,
+        "fullhash": "2047afccc60c119d7caf",
+        "related": {
+          "sourceMap": "pages-content-details.2047afccc60c119d7caf.hot-update.js.map"
+        }
+      },
+      "chunkNames": [
+        "pages-content-details"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        "pages-content-details"
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
       "name": "pages-content-search.js",
-      "size": 5961,
+      "size": 5965,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
@@ -534,33 +589,6 @@
         "javascriptModule": false,
         "related": {
           "sourceMap": "pages-content-search.js.map"
-        }
-      },
-      "chunkNames": [
-        "pages-content-search"
-      ],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        "pages-content-search"
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "pages-content-search.641133788059d4735b2b.hot-update.js",
-      "size": 5950,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true,
-        "fullhash": "641133788059d4735b2b",
-        "related": {
-          "sourceMap": "pages-content-search.641133788059d4735b2b.hot-update.js.map"
         }
       },
       "chunkNames": [
@@ -602,7 +630,7 @@
     },
     {
       "type": "asset",
-      "name": "main.641133788059d4735b2b.hot-update.js",
+      "name": "main.2047afccc60c119d7caf.hot-update.js",
       "size": 366,
       "emitted": false,
       "comparedForEmit": false,
@@ -610,9 +638,9 @@
       "info": {
         "hotModuleReplacement": true,
         "immutable": true,
-        "fullhash": "641133788059d4735b2b",
+        "fullhash": "2047afccc60c119d7caf",
         "related": {
-          "sourceMap": "main.641133788059d4735b2b.hot-update.js.map"
+          "sourceMap": "main.2047afccc60c119d7caf.hot-update.js.map"
         }
       },
       "chunkNames": [
@@ -652,15 +680,15 @@
     },
     {
       "type": "asset",
-      "name": "main.641133788059d4735b2b.hot-update.json",
-      "size": 51,
+      "name": "main.2047afccc60c119d7caf.hot-update.json",
+      "size": 52,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "hotModuleReplacement": true,
         "immutable": true,
-        "fullhash": "641133788059d4735b2b"
+        "fullhash": "2047afccc60c119d7caf"
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -685,7 +713,7 @@
           "name": "main.js"
         },
         {
-          "name": "main.641133788059d4735b2b.hot-update.js"
+          "name": "main.2047afccc60c119d7caf.hot-update.js"
         }
       ],
       "filteredAssets": 0,
@@ -737,9 +765,26 @@
       "assets": [
         {
           "name": "pages-content-search.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 1,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "pages-content-details": {
+      "name": "pages-content-details",
+      "chunks": [
+        "pages-content-details"
+      ],
+      "assets": [
+        {
+          "name": "pages-content-details.js"
         },
         {
-          "name": "pages-content-search.641133788059d4735b2b.hot-update.js"
+          "name": "pages-content-details.2047afccc60c119d7caf.hot-update.js"
         }
       ],
       "filteredAssets": 0,
@@ -1019,7 +1064,7 @@
       "id": "main",
       "files": [
         "main.js",
-        "main.641133788059d4735b2b.hot-update.js"
+        "main.2047afccc60c119d7caf.hot-update.js"
       ]
     },
     {
@@ -1043,8 +1088,14 @@
     {
       "id": "pages-content-search",
       "files": [
-        "pages-content-search.js",
-        "pages-content-search.641133788059d4735b2b.hot-update.js"
+        "pages-content-search.js"
+      ]
+    },
+    {
+      "id": "pages-content-details",
+      "files": [
+        "pages-content-details.js",
+        "pages-content-details.2047afccc60c119d7caf.hot-update.js"
       ]
     },
     {
