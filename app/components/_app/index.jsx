@@ -164,6 +164,20 @@ const App = (props) => {
         enabled: isServer
     })
 
+    // Fetch the privacy policy content asset
+    const SITE_ID = 'RefArch'
+    const CLIENT_ID = '2470973a-b8b6-4e91-b9c7-338f2d20c1db'
+    const {data: privacyPolicy} = useQuery({
+        queryKey: ['footerpolicy'],
+        queryFn: () => {
+            return fetch(`${getAppOrigin()}/mobify/proxy/ocapi/s/${SITE_ID}/dw/shop/v20_2/content/privacy-policy?client_id=${CLIENT_ID}`).then(res => res.json()).then((json) => {
+                console.log(json)
+                return json
+            })
+        },
+        cacheTime: 0
+    })
+
     // Used to conditionally render header/footer for checkout page
     const isCheckout = /\/checkout$/.test(location?.pathname)
 
@@ -382,6 +396,13 @@ const App = (props) => {
                             </SkipNavContent>
 
                             {!isCheckout ? <Footer /> : <CheckoutFooter />}
+
+                            
+                            <Box padding={{lg: 8, md: 4, base: 2}} mb={12}>
+                                {privacyPolicy && (
+                                    <div dangerouslySetInnerHTML={{__html: privacyPolicy.c_body}} />
+                                )}
+                            </Box>
 
                             <AuthModal {...authModal} />
                         </AddToCartModalProvider>
